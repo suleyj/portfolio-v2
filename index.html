@@ -1,13 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-v2</title>
-  </head>
-  <body>
-    <div id="app"> Suley portfolio </div>
-    <!-- <script type="module" src="/src/main.ts"></script> -->
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Suleyman Jama — Fullstack / Backend Developer</title>
+<meta name="description" content="Suleyman Jama, fullstack and backend developer in London, ON. Portfolio, projects, and experience." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">SJ<span class="dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-status">
+    <span class="pulse"></span>
+    Open to work
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Fullstack / Backend Developer</p>
+      <h1>I build software<br />that survives contact<br />with real users.</h1>
+      <p class="hero-sub">Based in London, ON. Currently shipping full-stack apps and looking for what's next.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Say hello</a>
+      </div>
+    </div>
+
+    <div class="hero-window" aria-hidden="true">
+      <div class="window-chrome">
+        <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+        <span class="window-title">about-me.ts</span>
+      </div>
+      <pre class="window-body"><code id="typewriter"></code><span class="caret">▍</span></pre>
+    </div>
+  </section>
+
+  <!-- TECH STRIP -->
+  <section class="tech-strip">
+    <p class="strip-label">Tools I actually use</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>TypeScript</span><span>JavaScript</span><span>PHP</span><span>Python</span><span>Go</span>
+        <span>React</span><span>Next.js</span><span>Laravel</span><span>Nuxt.js</span>
+        <span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Git</span>
+        <span>TypeScript</span><span>JavaScript</span><span>PHP</span><span>Python</span><span>Go</span>
+        <span>React</span><span>Next.js</span><span>Laravel</span><span>Nuxt.js</span>
+        <span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="work" class="section">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-top">
+        <div>
+          <h3>Software Developer</h3>
+          <p class="exp-company">Lynked Inc.</p>
+        </div>
+        <div class="exp-meta">
+          <span>Jul 2023 – Jan 2026</span>
+          <span>London, ON</span>
+        </div>
+      </div>
+      <ul class="exp-list">
+        <li>Split a legacy monolith into modular microservices for faster, safer deploys.</li>
+        <li>Built a Python + OpenAI pipeline that cut manual data entry by 90% across 10,000+ scanned images.</li>
+        <li>Shipped a Laravel / React smart-metering app used to track real energy usage.</li>
+        <li>Delivered three full-stack sites with a self-hosted CMS and Playwright end-to-end test coverage.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2>Projects</h2>
+    </div>
+    <p class="section-sub">Things I built because I wanted to, not because I had to.</p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <h3>Product Feedback Board</h3>
+        <div class="tags">
+          <span>React</span><span>Node</span><span>PostgreSQL</span><span>Docker</span>
+        </div>
+        <p>Full-stack feedback tracker with auth, roles, and its own CI/CD pipeline.</p>
+        <div class="project-links">
+          <a href="https://feedbackboard.suleymanjama.ca" target="_blank" rel="noopener">Live ↗</a>
+          <a href="https://github.com/suleyj/Product-feedback" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Connect 4 CLI</h3>
+        <div class="tags">
+          <span>Go</span><span>WebSockets</span><span>PostgreSQL</span>
+        </div>
+        <p>Multiplayer Connect 4 in your terminal, synced in real time over WebSockets.</p>
+        <div class="project-links">
+          <a href="https://github.com/suleyj/connect4-cli" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Markdown Blog Engine</h3>
+        <div class="tags">
+          <span>Python</span>
+        </div>
+        <p>A static site generator built from scratch no framework underneath.</p>
+        <div class="project-links">
+          <a href="https://github.com/suleyj/markdown-blog" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="section-head">
+      <span class="section-index">03</span>
+      <h2>About</h2>
+    </div>
+    <p class="about-text">
+      I like software that works quietly in the background — good APIs, clean data, deploys nobody
+      has to think about. Most of my day job has been refactoring things that grew too fast; most of
+      my nights are spent building small tools just to see if I can. Advanced Diploma in Computer
+      Programming and Analysis from Fanshawe College. Based in London, Ontario, open to fullstack or
+      backend roles.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2>Let's talk</h2>
+    </div>
+    <p class="contact-sub">Open to fullstack and backend roles — reach out any time.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:suleymanjama.32@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="https://github.com/suleyj" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar">
+  <div class="statusbar-left">
+    main
+    <span class="sep">•</span>
+    open-to-work
+  </div>
+  <div class="statusbar-right">
+    <span>London, ON</span>
+    <span class="sep">•</span>
+    <span id="clock">--:--</span>
+  </div>
+</footer>
+
+<script src="src/script.js"></script>
+</body>
 </html>
