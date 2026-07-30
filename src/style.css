@@ -453,6 +453,7 @@ main {
 .statusbar .sep { opacity: 0.5; }
 
 @media (max-width: 560px) {
+  .statusbar { position: static; }
   .statusbar-right span:not(#clock) { display: none; }
   .statusbar-right .sep { display: none; }
 }
