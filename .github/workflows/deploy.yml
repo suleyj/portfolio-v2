@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
@@ -10,33 +10,46 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout website
         uses: actions/checkout@v4
+
+      - name: Checkout SSG tool
+        uses: actions/checkout@v4
+        with:
+          repository: suleyj/static-site-generator
+          path: tools/blog-generator
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate blog
+        run: |
+          rm -rf ./tools/blog-generator/content/
+          cp -r ./content/ ./tools/blog-generator/
+          cd ./tools/blog-generator/
+          python3 src/main.py
+          cp -r ./docs/* ../../
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: '20'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install deps and build site
+        run: |
+          npm install
+          npm run build
 
-      - name: Build
-        run: npm run build
-
-      - name: Upload build output
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: build
 
   deploy:
     needs: build
