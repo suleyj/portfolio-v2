@@ -30,6 +30,7 @@ jobs:
 
       - name: Generate blog
         run: |
+          ls
           rm -rf ./tools/blog-generator/content/
           cp -r ./content/ ./tools/blog-generator/
           cd ./tools/blog-generator/
