@@ -254,22 +254,60 @@ main {
   letter-spacing: 0.06em;
   margin: 0 0 18px;
 }
-.marquee {
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
-}
-.marquee-track {
-  display: flex;
+/* .marquee { */
+/*   overflow: hidden; */
+/*   mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); */
+/* } */
+/* .marquee-track { */
+/*   display: flex; */
+/*   gap: 40px; */
+/*   width: max-content; */
+/*   animation: scroll 28s linear infinite; */
+/* } */
+/* .marquee-track span { */
+/*   font-family: var(--font-mono); */
+/*   font-size: 0.95rem; */
+/*   color: var(--text-muted); */
+/*   white-space: nowrap; */
+/* } */
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 40px;
-  width: max-content;
-  animation: scroll 28s linear infinite;
+  align-items: center;
 }
-.marquee-track span {
-  font-family: var(--font-mono);
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  white-space: nowrap;
+
+.tools .icon {
+  width: 100px;
+  height: auto;
+  justify-self: center;
 }
+
+.tools .js-icon {
+    width: 90px
+}
+
+/* Tablet: 3 columns */
+@media (max-width: 900px) {
+  .tools {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+}
+
+/* Mobile: 2 columns, smaller icons */
+@media (max-width: 560px) {
+  .tools {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* .tools img { */
+  /*   width: 64px; */
+  /* } */
+}
+
 @keyframes scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
