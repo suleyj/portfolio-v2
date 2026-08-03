@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — Suleyman Jama</title>
+<meta name="description" content="Notes on backend and fullstack engineering from Suleyman Jama." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../src/style.css" />
+<link rel="stylesheet" href="../src/blog.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <a href="index.html#top" class="logo">SJ<span class="dot">.</span></a>
+  <nav class="nav-links">
+    <a href="/#work">Work</a>
+    <a href="/#projects">Projects</a>
+    <a href="/#about">About</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+  <div class="nav-status">
+    <span class="pulse"></span>
+    Open to work
+  </div>
+</header>
+
+<main id="top" class="blog-main">
+
+  <!-- BLOG HEADER -->
+  <section class="blog-hero">
+    <p class="eyebrow">Writing</p>
+    <h1>Blog</h1>
+    <p class="blog-sub">Notes on the things I build and break — microservices, side projects, and whatever I get nerd-sniped by next.</p>
+  </section>
+
+  <!-- POST LIST -->
+  <section class="blog-list">
+
+    <div class="blog-year">
+      <h2>2026</h2>
+      <ul class="post-list">
+        <li class="post-row">
+          <a href="posts/breaking-the-monolith.html" class="post-title">Breaking the Monolith, One Service at a Time</a>
+          <span class="post-date">Feb 03</span>
+        </li>
+        <li class="post-row">
+          <a href="posts/ocr-pipeline-openai.html" class="post-title">Automating Data Entry With Python and OpenAI</a>
+          <span class="post-date">Jan 14</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="blog-year">
+      <h2>2025</h2>
+      <ul class="post-list">
+        <li class="post-row">
+          <a href="posts/smart-metering-laravel-react.html" class="post-title">Building a Smart-Metering App With Laravel and React</a>
+          <span class="post-date">Nov 09</span>
+        </li>
+        <li class="post-row">
+          <a href="posts/playwright-e2e-lessons.html" class="post-title">What End-to-End Testing With Playwright Taught Me</a>
+          <span class="post-date">Aug 21</span>
+        </li>
+        <li class="post-row">
+          <a href="posts/connect4-websockets.html" class="post-title">Writing a Multiplayer Connect 4 CLI in Go</a>
+          <span class="post-date">May 03</span>
+        </li>
+        <li class="post-row">
+          <a href="posts/markdown-blog-engine.html" class="post-title">Building a Static Site Generator From Scratch</a>
+          <span class="post-date">Feb 18</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="blog-year">
+      <h2>2024</h2>
+      <ul class="post-list">
+        <li class="post-row">
+          <a href="posts/why-i-started-writing.html" class="post-title">Why I'm Starting to Write About Code</a>
+          <span class="post-date">Sep 30</span>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="statusbar">
+  <div class="statusbar-left">
+    main
+    <span class="sep">•</span>
+    open-to-work
+  </div>
+  <div class="statusbar-right">
+    <span>London, ON</span>
+    <span class="sep">•</span>
+    <span id="clock">--:--</span>
+  </div>
+</footer>
+
+<script type="module" src="../src/script.ts"></script>
+</body>
+</html>

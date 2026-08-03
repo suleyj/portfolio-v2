@@ -1,0 +1,97 @@
+/* BLOG PAGE — extends style.css, reuses the same tokens defined in :root */
+
+.blog-main {
+  padding-bottom: 40px;
+}
+
+.nav-links a.active {
+  color: var(--accent-mint);
+}
+
+/* BLOG HERO */
+.blog-hero {
+  padding: 96px 0 56px;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.blog-sub {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 56ch;
+  margin: 0;
+}
+
+/* YEAR GROUPS */
+.blog-list {
+  padding-top: 48px;
+}
+
+.blog-year {
+  margin-bottom: 44px;
+}
+
+.blog-year h2 {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px 4px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.post-row:last-child {
+  border-bottom: none;
+}
+
+.post-title {
+  font-size: 1.02rem;
+  color: var(--text);
+  transition: color 0.15s ease;
+}
+
+.post-title:hover {
+  color: var(--accent-mint);
+}
+
+.post-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .post-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .post-date {
+    font-size: 0.75rem;
+  }
+}
