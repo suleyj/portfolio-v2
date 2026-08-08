@@ -1,8 +1,10 @@
 # Building My Own Static Site Generator
 
-[< Back Home](/)
+_2025-09-10_
 
-![Site generator image](/images/tolkien.png)
+[Back Home](/)
+
+![Site generator image](/src/assets/tolkien.png)
 
 > "Sometimes the best tool is the one you build for exactly one user: yourself."
 

@@ -7,9 +7,9 @@ function initTypewriter(): void {
   const lines: string[] = [
     "const dev = {",
     "  name: \"Suleyman Jama\",",
-    "  based: \"London, ON\",",
+    "  role: \"Software Engineer\",",
     "  stack: [\"TS\", \"PHP\", \"Python\", \"Go\"],",
-    "  focus: \"fullstack / backend\",",
+    "  focus: \"fullstack\",",
     "  status: \"open to work\",",
     "};",
   ];

@@ -1,8 +1,10 @@
 # Why I Went Back to Static Sites
 
-[< Back Home](/)
+_2026-07-31_
 
-![Static site image](/images/tom.png)
+[Back Home](/)
+
+![Static site image](/src/assets/tom.png)
 
 > "The fastest website is the one that doesn't have to think."
 
