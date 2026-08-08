@@ -33,7 +33,7 @@ jobs:
           ls
           rm -rf ./tools/blog-generator/content/
           cp -r ./content/ ./tools/blog-generator/
-          cp ./blog_templates/* ./tool/blog-generator/
+          cp ./blog_templates/* ./tools/blog-generator/
           cd ./tools/blog-generator/
           python3 src/main.py / --listing
           cp -r ./docs/* ../../
