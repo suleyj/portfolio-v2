@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp -r ./tools/blog-generator/docs/* ./build/ ",
+
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^26.2.0",
+    "glob": "^13.0.6",
     "typescript": "~5.9.3",
     "vite": "^8.0.1"
   }
