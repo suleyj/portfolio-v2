@@ -67,13 +67,16 @@ main {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 32px;
   background: rgba(11, 14, 19, 0.75);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+  padding: 20px 32px;
+}
+
+.nav div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   max-width: var(--max-width);
   margin: 0 auto;
 }
