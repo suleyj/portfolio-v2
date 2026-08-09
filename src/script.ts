@@ -10,7 +10,7 @@ function initTypewriter(): void {
     "  role: \"Software Engineer\",",
     "  stack: [\"TS\", \"PHP\", \"Python\", \"Go\"],",
     "  focus: \"fullstack\",",
-    "  status: \"open to work\",",
+    // "  status: \"open to work\",",
     "};",
   ];
 
