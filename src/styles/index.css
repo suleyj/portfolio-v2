@@ -112,6 +112,10 @@ main {
   border-radius: 100px;
 }
 
+.active:active {
+   color: var(--accent-mint); 
+}
+
 .pulse {
   width: 7px;
   height: 7px;
