@@ -2,9 +2,7 @@
 
 _2026-08-08_
 
-[Back Home](/)
-
-![Static site image](/src/assets/tom.png)
+![Static site image](/src/assets/static.webp)
 
 > "The fastest website is the one that doesn't have to think."
 

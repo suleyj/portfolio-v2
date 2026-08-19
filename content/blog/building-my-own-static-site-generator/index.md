@@ -2,9 +2,7 @@
 
 _2026-08-08_
 
-[Back Home](/)
-
-![Site generator image](/src/assets/tolkien.png)
+![Site generator image](/src/assets/ssg.jpeg)
 
 > "Sometimes the best tool is the one you build for exactly one user: yourself."
 
