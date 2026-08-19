@@ -12,7 +12,7 @@ After years of wrestling with frameworks, databases, and build pipelines for wha
 
 ## Why Static Won
 
-- **Speed**: No server-side rendering, no database round-trips — just files.
+- **Speed**: No server-side rendering, no database round-trips. Just files.
 - **Simplicity**: A markdown file in, an HTML file out. Nothing to patch or update at 2am.
 - **Ownership**: No vendor lock-in, no subscription, no mystery outage.
 
@@ -22,4 +22,4 @@ Static sites aren't great for anything that needs real-time interactivity or use
 
 ## Conclusion
 
-Static isn't old-fashioned — it's just honest about what a blog actually needs.
+Static isn't old-fashioned. It's just honest about what a blog actually needs.

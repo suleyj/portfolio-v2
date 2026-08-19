@@ -22,4 +22,4 @@ Writing the generator taught me more about templating, file I/O, and deployment 
 
 ## Conclusion
 
-It's a small tool, built for a small purpose — but it's mine, and I understand every line of it.
+No plugins. No config files to fight with. Just code I wrote and understand.
