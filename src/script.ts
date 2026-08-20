@@ -8,7 +8,7 @@ function initTypewriter(): void {
     "const dev = {",
     "  name: \"Suleyman Jama\",",
     "  role: \"Software Engineer\",",
-    "  stack: [\"TS\", \"PHP\", \"Python\", \"Go\"],",
+    "  stack: [\"TS\", \"PHP\", \"Python\"],",
     "  focus: \"fullstack\",",
     // "  status: \"open to work\",",
     "};",
